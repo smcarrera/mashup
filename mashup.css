@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+.board{
+	float:left;
+	width: 50%;
+	text-align:center;
+	padding: 20px;
+	
+}
+
+.weather{
+	float:left;
+	width: 50%;
+	text-align:center;
+	padding: 20px;	
+}
+
+
+.picst, .weathert{
+	width: 100%;
+	
+}
+
+.weathert{
+	background-size:contain;
+	
+}
+
+#tempnow, #condsnow, #ccontainer{
+	width: 100%;
+	
+}
+
+.shadow{
+	visibility:hidden;
+}
+
+#wcontainer {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+#ccontainer, 
+#weathert {
+    position: absolute;
+    /*top: 10%;
+    left: 50%;*/
+}
+
+#ccontainer {
+    z-index: 10;
+	top: 0%;
+    left: 0%;
+	font-size:large;
+	
+}
