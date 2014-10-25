@@ -1,3 +1,15 @@
+
+SMCARRERA Mashup Project
+Uses data from 2 APIs: Instragram & Weather Underground (WU)
+The Site shows the 16 most recent images on Instagram tagged as #brooklyn Brdige
+and the current weather temperature and weather conditions at the brooklyn bridge from WU.
+The background image then changes based on the current weather conditions and time of day.
+
+V1: was instagram only
+V2: Added Weather Undergound + improvements
+
+
+--------------------------------------------------
 # Mashup project
 
 This project is open-ended!  Requirements:
