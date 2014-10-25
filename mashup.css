@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
+
+/* CSS that applies to both boards*/
 .board{
 	float:left;
 	width: 50%;
@@ -8,50 +10,53 @@
 	
 }
 
-.weather{
-	float:left;
-	width: 50%;
-	text-align:center;
-	padding: 20px;	
+/* CSS around the Instagram Board*/
+.picst{
+	width: 100%;
+	
 }
 
-
-.picst, .weathert{
-	width: 100%;
+/* CSS around the Weather Board*/
+#wcontainer {
+    width: 100px;
+    height: 100px;
+    position: relative;
+	alignment-adjust:central;
 	
 }
 
 .weathert{
 	background-size:contain;
-	
-}
-
-#tempnow, #condsnow, #ccontainer{
 	width: 100%;
+	position: absolute;
+	
 	
 }
 
+
+/* used to create the same table size for both boards. Weather just has hidden images, there may be another way to do this*/
 .shadow{
 	visibility:hidden;
 }
 
-#wcontainer {
-    width: 100px;
-    height: 100px;
-    position: relative;
-}
-
-#ccontainer, 
-#weathert {
-    position: absolute;
-    /*top: 10%;
-    left: 50%;*/
-}
-
+/* used to place the weather conditions div infront of the background image table*/
 #ccontainer {
-    z-index: 10;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
 	top: 0%;
     left: 0%;
 	font-size:large;
 	
 }
+
+#tempnow{
+	width: 100%;
+	
+}
+
+#condsnow {
+	width: 100%;
+	
+}
+
