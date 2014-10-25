@@ -65,7 +65,7 @@ function backImage(obj, hour)
       //night time images
 	  if (hour<4 || hour>20){
 		  var img1 = condsarrayn[obj];
-		  if(obj =='Clear'){
+		  if(obj ==='Clear'){
 			  $('#ccontainer').css("color", "white");
 		  }
 		  return(img1);
@@ -73,8 +73,8 @@ function backImage(obj, hour)
 	  
 	  //day time images
 	  else{
-		  var img1 = condsarrayd[obj];
-      	  return(img1);
+		  var img2 = condsarrayd[obj];
+      	  return(img2);
 	  }
 }
 
@@ -94,7 +94,7 @@ function backImage(obj, hour)
 	  
 	  //returns the time of the weather condition/request in format 'hour'
 	  //currently not clear on the difference between observation_time and local_time in WU API, both appear to be the same
-	  var obsarray = parsed_json.current_observation.observation_time_rfc822.split(/[ ,]+/);;
+	  var obsarray = parsed_json.current_observation.observation_time_rfc822.split(/[ ,]+/);
 	  var hour =  parseInt(obsarray[4]);
 	  
        //adds the background image associated with the weather condition
